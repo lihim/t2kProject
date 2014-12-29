@@ -18,5 +18,10 @@ public class T2K_ProjectServlet extends HttpServlet {
 		int result  = (num1+num2)*num3;
 		String resultStr = new String("Result of ("+num1 + " + " + num2  + ") * " +num3 + " = " + result);
 		resp.getWriter().println(resultStr);
+
+		
+		
+		
+		
 	}
 }
