@@ -7,7 +7,7 @@
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
-    <persistedState key="aggregateWorkingSetId"/>
+    <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1420123792620"/>
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_8U01MYB3EeS78dE7nSmSBA" selectedElement="_8U01MoB3EeS78dE7nSmSBA" horizontal="true">
@@ -74,6 +74,8 @@
           <tags>persp.actionSet:org.eclipse.debug.ui.breakpointActionSet</tags>
           <tags>persp.newWizSC:org.eclipse.m2e.core.wizards.Maven2ProjectWizard</tags>
           <tags>persp.actionSet:org.eclipse.wst.ws.explorer.explorer</tags>
+          <tags>persp.actionSet:org.nodeclipse.pluginslist.core.actionSet</tags>
+          <tags>persp.actionSet:pm.eclipse.editbox.ActionSetId</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_85BHYYB3EeS78dE7nSmSBA" selectedElement="_85BHYoB3EeS78dE7nSmSBA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_85BHYoB3EeS78dE7nSmSBA" elementId="topLeft" containerData="2500" selectedElement="_85BHY4B3EeS78dE7nSmSBA">
               <tags>newtablook</tags>
@@ -124,6 +126,7 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view>&#xD;&#xA;&lt;presentation currentPage=&quot;root&quot; restore=&quot;true&quot;/>&#xD;&#xA;&lt;standbyPart/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_9fU5cIB3EeS78dE7nSmSBA" elementId="org.eclipse.ui.internal.introview">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -139,10 +142,11 @@
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>empty</tags>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_8yUpgIB3EeS78dE7nSmSBA" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.gif" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;/>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1420123792620&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <tags>active</tags>
@@ -236,7 +240,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8jaDwIB3EeS78dE7nSmSBA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_8jhYgIB3EeS78dE7nSmSBA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_7-AQq4B3EeS78dE7nSmSBA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_nm8L55HFEeSEDbR0g1FYMQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_7-AQq4B3EeS78dE7nSmSBA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8jaDwYB3EeS78dE7nSmSBA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -257,13 +261,19 @@
       <children xsi:type="menu:ToolBar" xmi:id="_86E3UIB3EeS78dE7nSmSBA" elementId="org.eclipse.wst.ws.explorer.explorer">
         <tags>Draggable</tags>
       </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_bxfn4JHFEeSwff41PyKWyw" elementId="org.nodeclipse.pluginslist.core.actionSet">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_byEPoJHFEeSwff41PyKWyw" elementId="pm.eclipse.editbox.ActionSetId">
+        <tags>Draggable</tags>
+      </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8jaq0IB3EeS78dE7nSmSBA" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_8jaq0YB3EeS78dE7nSmSBA" elementId="group.nav" toBeRendered="false"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8jbR4IB3EeS78dE7nSmSBA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_8jnfIIB3EeS78dE7nSmSBA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_79475YB3EeS78dE7nSmSBA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_nnCSiZHFEeSEDbR0g1FYMQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_79475YB3EeS78dE7nSmSBA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8jbR4YB3EeS78dE7nSmSBA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -577,6 +587,7 @@
     <bindings xmi:id="_7_oBQ4B3EeS78dE7nSmSBA" keySequence="CTRL+SHIFT+G" command="_79wZIYB3EeS78dE7nSmSBA"/>
     <bindings xmi:id="_7_pPZIB3EeS78dE7nSmSBA" keySequence="ALT+CTRL+H" command="_79wZJYB3EeS78dE7nSmSBA"/>
     <bindings xmi:id="_7_p2cIB3EeS78dE7nSmSBA" keySequence="ALT+CTRL+SHIFT+ARROW_DOWN" command="_7-Cs5YB3EeS78dE7nSmSBA"/>
+    <bindings xmi:id="_bLPgMJHFEeSwff41PyKWyw" keySequence="ALT+Z" command="_bKMXUZHFEeSwff41PyKWyw"/>
   </bindingTables>
   <bindingTables xmi:id="_7-y604B3EeS78dE7nSmSBA" elementId="org.eclipse.ui.textEditorScope" bindingContext="_7-IzhoB3EeS78dE7nSmSBA">
     <bindings xmi:id="_7-y61IB3EeS78dE7nSmSBA" keySequence="CTRL+SHIFT+NUMPAD_MULTIPLY" command="_79478IB3EeS78dE7nSmSBA"/>
@@ -845,6 +856,8 @@
   <bindingTables xmi:id="_8yRmMIB3EeS78dE7nSmSBA" bindingContext="_8yQYFIB3EeS78dE7nSmSBA"/>
   <bindingTables xmi:id="_8yRmMoB3EeS78dE7nSmSBA" bindingContext="_8yRmMYB3EeS78dE7nSmSBA"/>
   <bindingTables xmi:id="_8ySNQIB3EeS78dE7nSmSBA" bindingContext="_8yRmM4B3EeS78dE7nSmSBA"/>
+  <bindingTables xmi:id="_bhVsAZHFEeSwff41PyKWyw" bindingContext="_bhVsAJHFEeSwff41PyKWyw"/>
+  <bindingTables xmi:id="_bhVsA5HFEeSwff41PyKWyw" bindingContext="_bhVsApHFEeSwff41PyKWyw"/>
   <rootContext xmi:id="_787SlIB3EeS78dE7nSmSBA" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_787SlYB3EeS78dE7nSmSBA" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
       <children xmi:id="_787SloB3EeS78dE7nSmSBA" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -962,6 +975,8 @@
   <rootContext xmi:id="_8yQYFIB3EeS78dE7nSmSBA" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" name="Auto::org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
   <rootContext xmi:id="_8yRmMYB3EeS78dE7nSmSBA" elementId="org.eclipse.wst.web.ui.wizardsActionSet" name="Auto::org.eclipse.wst.web.ui.wizardsActionSet"/>
   <rootContext xmi:id="_8yRmM4B3EeS78dE7nSmSBA" elementId="org.eclipse.wst.ws.explorer.explorer" name="Auto::org.eclipse.wst.ws.explorer.explorer"/>
+  <rootContext xmi:id="_bhVsAJHFEeSwff41PyKWyw" elementId="org.nodeclipse.pluginslist.core.actionSet" name="Auto::org.nodeclipse.pluginslist.core.actionSet"/>
+  <rootContext xmi:id="_bhVsApHFEeSwff41PyKWyw" elementId="pm.eclipse.editbox.ActionSetId" name="Auto::pm.eclipse.editbox.ActionSetId"/>
   <descriptors xmi:id="_8C27cIB3EeS78dE7nSmSBA" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
   </descriptors>
@@ -2549,6 +2564,14 @@
   <commands xmi:id="_8T95k4B3EeS78dE7nSmSBA" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.this" commandName="Show 'this' variable" description="Show or hide the this variable" category="_79tVvIB3EeS78dE7nSmSBA"/>
   <commands xmi:id="_8T_HsIB3EeS78dE7nSmSBA" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.prototypes" commandName="Show proto variables" description="Show or hide proto variables" category="_79tVvIB3EeS78dE7nSmSBA"/>
   <commands xmi:id="_8T_HsYB3EeS78dE7nSmSBA" elementId="AUTOGEN:::org.eclipse.ui.articles.action.contribution.view/org.eclipse.wst.wsi.ui.internal.actions.actionDelegates.ValidateWSIProfileActionDelegate" commandName="WS-I Profile Validator" description="Validate WS-I Message Log File" category="_79tVvIB3EeS78dE7nSmSBA"/>
+  <commands xmi:id="_bKMXUZHFEeSwff41PyKWyw" elementId="pm.eclipse.editbox.SelectBox" commandName="EditBox Select box" category="_79suo4B3EeS78dE7nSmSBA"/>
+  <commands xmi:id="_bKMXUpHFEeSwff41PyKWyw" elementId="net.jeeeyul.eclipse.themes.command.open.store" commandName="Open Theme Store" category="_79tVvIB3EeS78dE7nSmSBA"/>
+  <commands xmi:id="_bKMXU5HFEeSwff41PyKWyw" elementId="net.jeeeyul.eclipse.themes.command.open.url" commandName="Open URL" category="_79tVvIB3EeS78dE7nSmSBA">
+    <parameters xmi:id="_bKMXVJHFEeSwff41PyKWyw" elementId="url" name="URL" optional="false"/>
+  </commands>
+  <commands xmi:id="_bKMXVZHFEeSwff41PyKWyw" elementId="pm.eclipse.editbox.UnselectBox" commandName="EditBox Unselect box" category="_79suo4B3EeS78dE7nSmSBA"/>
+  <commands xmi:id="_bKMXVpHFEeSwff41PyKWyw" elementId="pm.eclipse.editbox.actions.EnableEditBoxCmd" commandName="EditBox on/off" category="_79suo4B3EeS78dE7nSmSBA"/>
+  <commands xmi:id="_bgq9oJHFEeSwff41PyKWyw" elementId="AUTOGEN:::org.nodeclipse.pluginslist.core.actionSet/org.nodeclipse.pluginslist.core.PluginsListAction" commandName="Nodeclipse Plugins List" description="Nodeclipse Plugins List is convinient way to install Nodeclipse plugins" category="_79tVvIB3EeS78dE7nSmSBA"/>
   <addons xmi:id="_787SmIB3EeS78dE7nSmSBA" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_7875oIB3EeS78dE7nSmSBA" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_7875oYB3EeS78dE7nSmSBA" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

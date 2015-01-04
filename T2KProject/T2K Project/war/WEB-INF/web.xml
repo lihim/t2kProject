@@ -12,7 +12,8 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>T2K_Project</servlet-name>
 		<url-pattern>/t2k_project</url-pattern>
 	</servlet-mapping>
-		<servlet>
+	
+	<servlet>
 		<servlet-name>MyNewServlet</servlet-name>
 		<servlet-class>com.myproject.javacourse.MyNewServlet</servlet-class>
 	</servlet>
@@ -20,6 +21,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>MyNewServlet</servlet-name>
 		<url-pattern>/mynewservlet</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>StockDetailsServlet</servlet-name>
+		<servlet-class>com.myproject.javacourse.StockDetailsServlet</servlet-class>
+	</servlet>
+		<servlet-mapping>
+		<servlet-name>StockDetailsServlet</servlet-name>
+		<url-pattern>/stockdetailsservlet</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
