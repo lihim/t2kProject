@@ -24,8 +24,8 @@ public class Stock {
 		
 		String stockHtmlDetailsString;
 
-		stockHtmlDetailsString = "<b>Stock symbol</b>: " +get_symbol()+ " <b>Bid</b> "
-				+get_bid() + " <b>ask</b> " + get_ask() + " <b>date</b> "+ dateFormat.format(getDate());;
+		stockHtmlDetailsString = "<b>Stock symbol:</b> " +get_symbol()+ " <b>Bid:</b> "
+				+get_bid() + " <b>ask:</b> " + get_ask() + " <b>date:</b> "+ dateFormat.format(getDate());;
 				
 		return stockHtmlDetailsString;
 	}
