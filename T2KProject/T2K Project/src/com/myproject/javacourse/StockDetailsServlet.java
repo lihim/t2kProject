@@ -1,7 +1,6 @@
 package com.myproject.javacourse;
 
 import java.io.IOException;
-import java.sql.Date;
 import java.util.Calendar;
 
 import javax.servlet.ServletException;
@@ -17,6 +16,7 @@ public class StockDetailsServlet  extends HttpServlet{
 		
 		Calendar calendar = Calendar.getInstance();
 		calendar.set(2014, Calendar.NOVEMBER, 15);
+	
 		
 		Stock PIH = new Stock("PIH", 13.1, 12.4, calendar.getTime());
 		Stock AAL = new Stock("AAL", 5.78, 5.5, calendar.getTime());
