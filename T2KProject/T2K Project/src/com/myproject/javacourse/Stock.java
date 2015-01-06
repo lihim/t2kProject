@@ -10,11 +10,11 @@ public class Stock {
 	private float _bid;
 	private Date date;
 	
-	public Stock(String symbol, double ask, double bid, Date date){
-		this._ask = (float) ask;
-		this._bid = (float) bid;
-		this._symbol = symbol;
-		this.date = date;
+	public Stock(String symbol, float ask, float bid, Date date){
+		set_ask( ask);
+		set_bid( bid);
+		set_symbol(symbol);
+		setDate( date);
 	}
 
 	public String getHtmlDescription(){
@@ -23,8 +23,8 @@ public class Stock {
 		
 		String stockHtmlDetailsString;
 
-		stockHtmlDetailsString = "<b>Stock symbol:</b> " +get_symbol()+ " <b>Bid:</b> "
-				+get_bid() + " <b>ask:</b> " + get_ask() + " <b>date:</b> "+ dateFormat.format(getDate());
+		stockHtmlDetailsString = "<b>Stock symbol:</b> " +_symbol+ " <b>Bid:</b> "
+				+_bid + " <b>ask:</b> " + _ask + " <b>date:</b> "+ dateFormat.format(getDate());
 				
 		return stockHtmlDetailsString;
 	}
