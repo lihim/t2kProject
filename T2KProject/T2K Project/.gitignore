@@ -1,0 +1,3 @@
+*.class
+*.jar
+war/WEB-INF/lib
