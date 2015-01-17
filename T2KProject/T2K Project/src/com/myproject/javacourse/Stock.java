@@ -1,6 +1,7 @@
 package com.myproject.javacourse;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Stock {
@@ -9,13 +10,32 @@ public class Stock {
 	private float _ask;
 	private float _bid;
 	private Date date;
+	private int recommendation;
+	private int stockQuantity;
+	final static int BUY = 0;
+	final static int SELL = 1;
+	final static int REMOVE = 2;
+	final static int HOLD = 3;
 	
-	public Stock(String symbol, float ask, float bid, Date date){
+	
+//	public Stock(String symbol, float ask, float bid, Object object){
+//	
+//		set_ask( ask);
+//		set_bid( bid);
+//		set_symbol(symbol);
+//		setDate( object);
+//	}
+
+
+
+	public Stock(String symbol, float ask, float bid, Object set) {
 		set_ask( ask);
 		set_bid( bid);
 		set_symbol(symbol);
-		setDate( date);
+		setDate( set);
 	}
+
+
 
 	public String getHtmlDescription(){
 		
@@ -52,8 +72,8 @@ public class Stock {
 	public Date getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setDate(Object object) {
+		this.date = (Date) object;
 	}
 	
 	
