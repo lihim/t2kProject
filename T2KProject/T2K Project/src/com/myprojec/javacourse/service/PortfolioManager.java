@@ -15,15 +15,11 @@ public class PortfolioManager {
 	
 	public Portfolio getPortfolio(){
 
-		Calendar calendar = Calendar.getInstance();
-		calendar.set(2014, Calendar.NOVEMBER, 15);
+
 		
-		Stock PIH = new Stock("PIH", 13.1f, 12.4f, calendar.getTime());
-		Stock AAL = new Stock("AAL", 5.78f, 5.5f, calendar.getTime());
-		Stock CAAS = new Stock("CAAS", 32.2f, 31.5f, calendar.getTime());
-		portfolio.addStock(new Stock("PIH", 13.1f, 12.4f, calendar.getTime()));
-		portfolio.addStock(AAL);
-		portfolio.addStock(CAAS);
+		portfolio.addStock(new Stock("PIH", 13.1f, 12.4f, 2014, 11, 15));
+		portfolio.addStock(new Stock("AAL", 5.78f, 5.5f, 2014, 11, 15));
+		portfolio.addStock(new Stock("CAAS", 32.2f, 31.5f, 2014, 11, 15));
 		
 		return portfolio;
 		

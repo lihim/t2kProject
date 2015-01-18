@@ -18,21 +18,19 @@ public class Stock {
 	final static int HOLD = 3;
 	
 	
-//	public Stock(String symbol, float ask, float bid, Object object){
-//	
-//		set_ask( ask);
-//		set_bid( bid);
-//		set_symbol(symbol);
-//		setDate( object);
-//	}
 
 
 
-	public Stock(String symbol, float ask, float bid, Object set) {
+
+	public Stock(String symbol, float ask, float bid, int year, int mounth, int day) {
+		
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(year, mounth-1, day);
+		
 		set_ask( ask);
 		set_bid( bid);
 		set_symbol(symbol);
-		setDate( set);
+		setDate( calendar.getTime());
 	}
 
 
@@ -72,8 +70,8 @@ public class Stock {
 	public Date getDate() {
 		return date;
 	}
-	public void setDate(Object object) {
-		this.date = (Date) object;
+	public void setDate(Date date) {
+		this.date = date;
 	}
 	
 	
