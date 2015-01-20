@@ -12,6 +12,7 @@ import com.myproject.javacourse.model.Portfolio;
 
 public class PortfolioServlet extends HttpServlet {
 
+	
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 	throws ServletException, IOException{
 		resp.setContentType("text/html");

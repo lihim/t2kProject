@@ -12,10 +12,10 @@ public class Stock {
 	private Date date;
 	private int recommendation;
 	private int stockQuantity;
-	final static int BUY = 0;
-	final static int SELL = 1;
-	final static int REMOVE = 2;
-	final static int HOLD = 3;
+	private final static int BUY = 0;
+	private final static int SELL = 1;
+	private final static int REMOVE = 2;
+	private final static int HOLD = 3;
 	
 	
 

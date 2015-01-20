@@ -6,11 +6,11 @@ public class Portfolio {
 
 	private String title;
 	private  final int MAX_PORTFOLIO_SIZE = 5;
-	private Stock[] stocks;
+	private Stock stocks[];
 	private static int portfolioSize;
 	
-	public Portfolio(){
-		title = "lihi's Portfolio";
+	public Portfolio(String portfolioName){
+		title = portfolioName;
 		stocks = new Stock[MAX_PORTFOLIO_SIZE];
 		portfolioSize = 0;
 	}
