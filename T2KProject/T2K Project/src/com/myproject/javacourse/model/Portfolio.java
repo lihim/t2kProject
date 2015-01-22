@@ -1,14 +1,17 @@
 package com.myproject.javacourse.model;
 
+import org.mortbay.io.Portable;
+
 import com.myproject.javacourse.Stock;
 
 public class Portfolio {
 
 	private String _title;
 	private  final int MAX_PORTFOLIO_SIZE = 5;
-	private Stock _stocks[];
+	private Stock []_stocks;
 	private static int _portfolioSize;
 	
+
 
 	public Portfolio(String portfolioName){
 		_title = portfolioName;
@@ -44,4 +47,5 @@ public class Portfolio {
 		}
 		return res;
 	}
+	
 }

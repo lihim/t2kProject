@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import com.myproject.javacourse.model.Portfolio;
+
 public class Stock {
 
 	private String _symbol;
@@ -18,19 +20,12 @@ public class Stock {
 	private final static int HOLD = 3;
 	
 	
-
-
-
-
-	public Stock(String symbol, float ask, float bid, int year, int mounth, int day) {
-		
-		Calendar calendar = Calendar.getInstance();
-		calendar.set(year, mounth-1, day);
+	public Stock(String symbol, float ask, float bid, Date date) {
 		
 		set_ask( ask);
 		set_bid( bid);
 		set_symbol(symbol);
-		setDate( calendar.getTime());
+		setDate( date);
 	}
 
 
@@ -71,7 +66,7 @@ public class Stock {
 		return date;
 	}
 	public void setDate(Date date) {
-		this.date = date;
+		this.date = new Date(date.getTime());
 	}
 	
 	
