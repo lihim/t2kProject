@@ -2,17 +2,17 @@ package com.myprojec.javacourse.service;
 
 import java.util.Calendar;
 
-import com.myproject.javacourse.Stock;
 import com.myproject.javacourse.model.Portfolio;
+import com.myproject.javacourse.model.Stock;
 
 public class PortfolioManager {
 
 	private Portfolio _portfolio;
 
-	
+
 	
 	public PortfolioManager(){
-		_portfolio = new Portfolio("lihi's protfolio");
+		_portfolio = new Portfolio("Portfolio #1");
 
 	}
 	

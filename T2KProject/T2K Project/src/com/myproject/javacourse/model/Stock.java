@@ -1,10 +1,8 @@
-package com.myproject.javacourse;
+package com.myproject.javacourse.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-import com.myproject.javacourse.model.Portfolio;
 
 public class Stock {
 
@@ -19,6 +17,10 @@ public class Stock {
 	private final static int REMOVE = 2;
 	private final static int HOLD = 3;
 	
+	
+	public Stock(Stock stock){
+		this(stock.get_symbol(), stock.get_ask(), stock.get_bid(), stock.getDate());
+	}
 	
 	public Stock(String symbol, float ask, float bid, Date date) {
 		

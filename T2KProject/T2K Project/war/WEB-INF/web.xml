@@ -5,33 +5,6 @@ xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
-		<servlet-name>T2K_Project</servlet-name>
-		<servlet-class>com.myproject.javacourse.T2K_ProjectServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>T2K_Project</servlet-name>
-		<url-pattern>/t2k_project</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>MyNewServlet</servlet-name>
-		<servlet-class>com.myproject.javacourse.MyNewServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>MyNewServlet</servlet-name>
-		<url-pattern>/mynewservlet</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>StockDetailsServlet</servlet-name>
-		<servlet-class>com.myproject.javacourse.StockDetailsServlet</servlet-class>
-	</servlet>
-		<servlet-mapping>
-		<servlet-name>StockDetailsServlet</servlet-name>
-		<url-pattern>/stockdetailsservlet</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
 		<servlet-name>PortfolioServlet</servlet-name>
 		<servlet-class>com.myproject.javacourse.servlet.PortfolioServlet</servlet-class>
 	</servlet>
