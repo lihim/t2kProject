@@ -4,15 +4,18 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import com.myproject.javacourse.model.Portfolio.ALGO_RECOMMENDATION;
+
 public class Stock {
 
+	
 	private String _symbol;
 	private float _ask;
 	private float _bid;
 	private Date date;
-	private int recommendation;
+	private ALGO_RECOMMENDATION recommendation;
 	private int stockQuantity;
-	private final static int BUY = 0;
+	private final static int BUY = 0; //what about all of these
 	private final static int SELL = 1;
 	private final static int REMOVE = 2;
 	private final static int HOLD = 3;

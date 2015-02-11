@@ -4,6 +4,9 @@ import org.mortbay.io.Portable;
 
 public class Portfolio {
 
+	enum ALGO_RECOMMENDATION {DO_NOTHING, BUY, SELL};
+	
+	private float _balance;
 	private String _title;
 	private  final int MAX_PORTFOLIO_SIZE = 5;
 	private Stock []_stocks;
@@ -47,27 +50,31 @@ public class Portfolio {
 	
 	public void removeStock(int index){
 		
-		for(int i = index ; i< _stocks.length -1 ; i++){
+		for(int i = index ; i< _portfolioSize ; i++){
 
 			_stocks[i] = _stocks[i+1];
 
 		}
-		_stocks[_stocks.length - 1] = null;
+		_stocks[_portfolioSize - 1] = null;
 		
 		
 	}
 	
 	public void addStock(Stock stock){
 		
-		_stocks[_portfolioSize] = stock;
-
-		_portfolioSize++;
+		Stock tempStock = new Stock(stock);
+		if(_portfolioSize < MAX_PORTFOLIO_SIZE){
+			_stocks[_portfolioSize] = tempStock;
+	
+			_portfolioSize++;
+		}
 	}
 	
 	//returns the whole stock arr
 	public Stock[] getStockArr(){
 		return _stocks;
 	}
+
 	
 	public String getHtmlString(){
 		String res;
@@ -80,6 +87,53 @@ public class Portfolio {
 			}
 		}
 		return res;
+	}
+	
+	public void updateBalance(float amount){
+		this._balance = amount;
+	}
+	
+	public boolean removeStock(String symbol){
+		
+		for(int i = 0 ; i < _portfolioSize ; i++){
+			if(_stocks[i].get_symbol() == symbol){
+				sellStock(symbol, 1); ///from where I get the quantity
+				removeStock(i);
+				return true;
+				
+			}
+		}
+		return false;
+	}
+	
+	public boolean sellStock(String symbol, int quantity){
+		
+		if(quantity < 0){
+			return false;
+		}
+	
+		Stock relevantStock = null;
+		for(int i = 0 ; i < _portfolioSize ; i++){
+			if(_stocks[i].get_symbol() == symbol){
+
+				relevantStock = _stocks[i];
+			}
+		}
+		
+
+		if(quantity == -1){
+			for(int i = 0 ; i<_portfolioSize ; i++){
+				_stocks[i] = null;
+				return true;
+			}
+		}
+		
+		for(int i = 0 ; i<quantity ; i++){
+			_balance += relevantStock.get_bid();
+		}
+		
+		
+		return true;
 	}
 	
 }
