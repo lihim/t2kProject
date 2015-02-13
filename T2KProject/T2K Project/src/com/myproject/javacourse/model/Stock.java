@@ -15,10 +15,13 @@ public class Stock {
 	private Date date;
 	private ALGO_RECOMMENDATION recommendation;
 	private int stockQuantity;
-	private final static int BUY = 0; //what about all of these
-	private final static int SELL = 1;
-	private final static int REMOVE = 2;
-	private final static int HOLD = 3;
+	public int getStockQuantity() {
+		return stockQuantity;
+	}
+
+	public void setStockQuantity(int stockQuantity) {
+		this.stockQuantity = stockQuantity;
+	}
 	
 	
 	public Stock(Stock stock){
@@ -31,6 +34,7 @@ public class Stock {
 		set_bid( bid);
 		set_symbol(symbol);
 		setDate( date);
+		
 	}
 
 
