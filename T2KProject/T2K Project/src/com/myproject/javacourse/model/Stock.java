@@ -15,6 +15,7 @@ public class Stock {
 	private Date date;
 	private ALGO_RECOMMENDATION recommendation;
 	private int stockQuantity;
+	
 	public int getStockQuantity() {
 		return stockQuantity;
 	}
@@ -46,7 +47,8 @@ public class Stock {
 		String stockHtmlDetailsString;
 
 		stockHtmlDetailsString = "<b>Stock symbol:</b> " +_symbol+ " <b>Bid:</b> "
-				+_bid + " <b>ask:</b> " + _ask + " <b>date:</b> "+ dateFormat.format(getDate());
+				+_bid + " <b>ask:</b> " + _ask + " <b>date:</b> "+ dateFormat.format(getDate()) 
+				+ " <b>quantity:</b> " + stockQuantity;
 				
 		return stockHtmlDetailsString;
 	}

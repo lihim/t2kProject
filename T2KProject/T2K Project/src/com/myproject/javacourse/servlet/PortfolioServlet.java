@@ -23,14 +23,5 @@ public class PortfolioServlet extends HttpServlet {
 		Portfolio portfolio = portfolioManager.getPortfolio();
 
 		resp.getWriter().println(portfolio);
-				
-
-		
-		
-		
-		
-		
-
-		
 	}
 }
