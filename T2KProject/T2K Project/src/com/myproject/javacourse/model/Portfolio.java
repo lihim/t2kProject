@@ -155,7 +155,7 @@ public class Portfolio {
 		}
 		res+="<br>";
 		res += "Total Portfolio Value: " + getTotalValue() + "$ <br>Total Stocks value: " 
-				+ getTotalValue() + "$ <br> Balance: " + getBalance();
+				+ getTotalValue() + "$ <br> Balance: " + getBalance() + "$";
 
 		return res;
 	}
